@@ -1,0 +1,19 @@
+.Weather {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgb(102, 102, 204); */
+  background: repeating-linear-gradient(
+    to right,
+    rgba(102, 102, 204, 0.5) 10%,
+    rgba(102, 102, 204, 1) 20%,
+    rgba(102, 102, 204, 0.5) 30%
+  );
+  font-weight: bold;
+  color: beige;
+  height: 20vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  /* border: lightblue solid; */
+}

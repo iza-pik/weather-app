@@ -1,0 +1,23 @@
+import React from "react";
+import "./input-field.css";
+
+const InputField = props => (
+  <div className="Input-field">
+    <label htmlFor={props.id}>City: </label>
+    <input
+      type={props.type}
+      id={props.id}
+      name={props.id}
+      required
+      minLength="4"
+      maxLength="20"
+      placeholder={props.placeholder}
+      value={props.value}
+      onChange={props.onChange}
+      onBlur={props.onBlur}
+      onSubmit={props.onSubmit}
+    />
+  </div>
+);
+
+export default InputField;

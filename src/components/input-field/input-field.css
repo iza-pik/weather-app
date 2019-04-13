@@ -1,0 +1,7 @@
+.Input-field {
+  height: 10vh;
+  background-color: bisque;
+  font-weight: bold;
+  font-size: calc(6px + 2vmin);
+  padding-top: 4vh;
+}
