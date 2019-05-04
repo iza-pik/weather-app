@@ -4,4 +4,11 @@
   background: darkblue;
   transition: 0.3s color ease-in-out, 0.3 background ease-in-out;
   margin-bottom: 4vh;
+  transition: 0.2s opacity linear;
+}
+
+.submit-button:disabled {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.2s opacity linear;
 }
