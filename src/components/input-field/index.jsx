@@ -3,7 +3,6 @@ import "./input-field.css";
 
 const InputField = props => (
   <div className="Input-field">
-    {/* <label htmlFor={props.id}>City: </label> */}
     {props.label && <label htmlFor={props.id}>{props.label}</label>}
     <input
       checked={props.checked}

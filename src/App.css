@@ -22,8 +22,8 @@
 .logo {
   display: flex;
   flex-direction: column;
-  height: 10vh;
-  margin-bottom: 4vh;
+  height: 8vmin;
+  margin-bottom: 4vmin;
   animation: img-spin infinite 20s linear;
   pointer-events: none;
 }
@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  font-size: calc(11px + 2vmin);
+}
+
+label {
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+fieldset {
+  border-style: none;
+}
+/* label {
+  display: inline-block;
+  width: 14vmax;
+  text-align: right;
+}​ */

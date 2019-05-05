@@ -1,10 +1,9 @@
-.Weather {
+.current-weather {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* background-color: rgb(102, 102, 204); */
   background: repeating-linear-gradient(
     to right,
     rgba(102, 102, 204, 0.5) 10%,
@@ -12,15 +11,19 @@
     rgba(102, 102, 204, 0.5) 30%
   );
   font-weight: bold;
+  font-size: calc(6px + 2vmin);
   color: beige;
-  height: 30vmin;
-  padding-left: 4vh;
-  padding-right: 4vh;
-  /* border: lightblue solid; */
+  height: 100%;
 }
 
 ul {
   list-style: none;
 }
 .weather-icon {
+  min-width: 1vmax;
+  max-width: 3vmax;
+}
+
+.weather-icon:hover {
+  transform: scale(1.5);
 }

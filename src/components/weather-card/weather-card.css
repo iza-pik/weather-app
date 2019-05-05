@@ -1,11 +1,14 @@
 .weather-card {
   font-weight: normal;
-  font-size: 1vw;
+  font-size: calc(6px + 1vmin);
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   border: 2px solid hsla(240, 100%, 27%, 0.5);
+  box-shadow: 4px 4px hsla(195, 53%, 79%, 0.5);
   border-radius: 10px;
-  padding: 2vmin;
+  padding: 1vmin;
   margin: 1vmin;
 }

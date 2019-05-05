@@ -1,12 +1,13 @@
 import React from "react";
 import "./current-weather.css";
+import { Celsius } from "constants";
 
 const CurrentWeather = props => {
   return (
-    <div className="Weather">
+    <div className="current-weather">
       <ul>
         <li>{`Current weather in ${props.city}:`}</li>
-        <li>{props.data.main.temp.toFixed(0)}</li>
+        <li>{`${props.data.main.temp.toFixed(0)}°C`}</li>
         <img
           src={`http://openweathermap.org/img/w/${
             props.data.weather[0].icon

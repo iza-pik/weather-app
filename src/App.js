@@ -5,6 +5,8 @@ import Form from "./components/form";
 import Button from "./components/button";
 import CurrentWeather from "./components/current-weather";
 import { API_KEY } from "./constants";
+// import { Celsius } from "./constants";
+// import { Fahrenheit } from "./constants";
 import ForecastWeather from "./components/forecast-weather";
 
 class App extends Component {
@@ -73,12 +75,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Check today's weather</h1>
-          <img src="https://bit.ly/2UhPg06" alt="sunny" className="logo" />
+          <h1>What's the weather like?</h1>
+          <img
+            src="https://bit.ly/2UhPg06"
+            alt="spinning sun"
+            className="logo"
+          />
         </header>
         <Form className="input-form" onSubmit={this.onSubmit}>
-          <legend>
-            City:
+          <fieldset>
+            <label>City:</label>
             <InputField
               placeholder="Enter city"
               type="text"
@@ -86,16 +92,16 @@ class App extends Component {
               value={this.state.city}
               onChange={this.onChange}
             />
-          </legend>
+          </fieldset>
           <InputField
-            label="Current Weather"
+            label="Current weather"
             id="currentWeather"
             checked={this.state.currentWeather}
             type="checkbox"
             onChange={this.onChangeCheckbox}
           />
           <InputField
-            label="Weather Forecast"
+            label="Weather forecast for the next 5 days"
             id="forecastWeather"
             checked={this.state.forecastWeather}
             type="checkbox"
@@ -138,7 +144,6 @@ class App extends Component {
             data={this.state.weatherData}
           />
         )}
-
         {this.state.forecastData && (
           <ForecastWeather
             city={this.state.currentCity}
