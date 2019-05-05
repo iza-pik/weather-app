@@ -77,14 +77,16 @@ class App extends Component {
           <img src="https://bit.ly/2UhPg06" alt="sunny" className="logo" />
         </header>
         <Form className="input-form" onSubmit={this.onSubmit}>
-          <label>City:</label>
-          <InputField
-            placeholder="Enter city"
-            type="text"
-            id="city"
-            value={this.state.city}
-            onChange={this.onChange}
-          />
+          <legend>
+            City:
+            <InputField
+              placeholder="Enter city"
+              type="text"
+              id="city"
+              value={this.state.city}
+              onChange={this.onChange}
+            />
+          </legend>
           <InputField
             label="Current Weather"
             id="currentWeather"
