@@ -1,6 +1,6 @@
 import React from "react";
 import "./current-weather.css";
-import { Celsius } from "constants";
+// import { Celsius } from "constants";
 
 const CurrentWeather = props => {
   return (
