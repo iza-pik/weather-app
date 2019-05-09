@@ -2,6 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://iza-pik.github.io/weather-app/",
   "installConfig": {
     "pnp": true
   },

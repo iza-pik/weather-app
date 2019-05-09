@@ -52,6 +52,7 @@ class App extends Component {
         .then(json => {
           this.setState({ weatherData: json, loading: false });
         });
+    else this.setState({ weatherData: null });
     if (this.state.forecastWeather)
       fetch(
         `https://api.openweathermap.org/data/2.5/forecast?q=${
@@ -69,6 +70,7 @@ class App extends Component {
         .then(json => {
           this.setState({ forecastData: json, loading: false });
         });
+    else this.setState({ forecastData: null });
   };
 
   render() {
