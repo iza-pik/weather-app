@@ -16,6 +16,7 @@ const InputField = props => (
       onChange={props.onChange}
       onBlur={props.onBlur}
       onSubmit={props.onSubmit}
+      {...props}
     />
   </div>
 );

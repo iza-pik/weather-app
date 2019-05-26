@@ -9,7 +9,7 @@ const ForecastWeather = props => {
         <li>{`Weather forecast for ${props.city}:`}</li>
       </ul>
       {props.data.list.map(forecast => (
-        <WeatherCard weather={forecast} />
+        <WeatherCard units={props.units} weather={forecast} />
       ))}
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import "./current-weather.css";
+// import changeUnits from "../../utilities/temperatureService";
 // import { Celsius } from "constants";
 
 const CurrentWeather = props => {
@@ -7,7 +8,10 @@ const CurrentWeather = props => {
     <div className="current-weather">
       <ul>
         <li>{`Current weather in ${props.city}:`}</li>
-        <li>{`${props.data.main.temp.toFixed(0)}°C`}</li>
+        <li>
+          {props.data.main.temp.toFixed(0)}
+          {props.units === "metric" ? "°C" : "F"}
+        </li>
         <img
           src={`http://openweathermap.org/img/w/${
             props.data.weather[0].icon

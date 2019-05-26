@@ -144,12 +144,14 @@ class App extends Component {
           <CurrentWeather
             city={this.state.currentCity}
             data={this.state.weatherData}
+            units={this.state.units}
           />
         )}
         {this.state.forecastData && (
           <ForecastWeather
             city={this.state.currentCity}
             data={this.state.forecastData}
+            units={this.state.units}
           />
         )}
       </div>
