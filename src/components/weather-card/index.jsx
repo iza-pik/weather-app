@@ -6,7 +6,6 @@ import changeUnits from "../../utilities/temperatureService";
 const WeatherCard = props => {
   return (
     <div className="weather-card">
-      {/* <h2>{props.weather.main.}</h2> */}
       <div className="weather-card--header">
         {moment(props.weather.dt_txt).calendar()}
       </div>
