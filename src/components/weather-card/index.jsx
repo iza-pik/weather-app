@@ -1,7 +1,7 @@
 import React from "react";
 import "./weather-card.css";
 import * as moment from "moment";
-import changeUnits from "../../utilities/temperatureService";
+// import changeUnits from "../../utilities/temperatureService";
 
 const WeatherCard = props => {
   return (
