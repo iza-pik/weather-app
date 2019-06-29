@@ -69,7 +69,8 @@ class App extends Component {
         })
         .then(json => {
           this.setState({ forecastData: json, loading: false });
-        });
+        })
+        .catch(error => this.setState({ error }));
     else this.setState({ forecastData: null });
   };
 

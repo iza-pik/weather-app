@@ -1,6 +1,6 @@
 import React from "react";
 import "./current-weather.css";
-// import changeUnits from "../../utilities/temperatureService";
+import { getHoursMinutes } from "../../utilities/getHoursMinutes";
 
 const CurrentWeather = props => {
   return (
@@ -19,6 +19,8 @@ const CurrentWeather = props => {
           className="weather-icon"
         />
         <li>{props.data.weather[0].description}</li>
+        <li>{`Sunrise: ${getHoursMinutes(props.data.sys.sunrise)}`}</li>
+        <li>{`Sunset: ${getHoursMinutes(props.data.sys.sunset)}`}</li>
       </ul>
     </div>
   );
